@@ -1,0 +1,24 @@
+name: Bug report
+description: Something on inkstampmap.com does not work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "⚠️ Issues are public: do not include your email address or any personal data."
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what you got instead.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      placeholder: https://inkstampmap.com/...
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: iPhone 15 / Safari, Windows / Chrome...

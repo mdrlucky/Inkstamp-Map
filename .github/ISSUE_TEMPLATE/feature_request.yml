@@ -1,0 +1,11 @@
+name: Feature or stamp suggestion
+description: An idea for the site, or a stamp that is missing or wrong.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your suggestion
+      description: For a stamp, give its name, location and a source if you have one.
+    validations:
+      required: true

@@ -1,0 +1,29 @@
+name: Privacy / personal data request
+description: A question or request about your personal data (GDPR).
+labels: [privacy]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **This issue will be public.** Do not write your email address or any personal data here.
+        To delete your account and all its data, use **Account → Delete account** on inkstampmap.com: it is immediate.
+        Describe your request; we will reply in this issue with a way to continue privately if needed.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Request type
+      options:
+        - Access to my data
+        - Correction
+        - Deletion
+        - Question about the privacy policy
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: No personal data, please.
+    validations:
+      required: true
